@@ -6,3 +6,4 @@
 * use `between()` from dplyr, eg `data %>% mutate(bw7_9 = between(var, 7, 9))`
 * `data %>% select(num_range("x", 1:3))` will match cols x1, x2, and x3. 
 * `x != lag(x)` will find value where x changes across the multiple rows.
+* Have many rows of R code with similar set up. If you want to change one word, instead of going through line by line you can highlight while pushing alt to change a "rectangle" of code. See: https://twitter.com/ElenaHaeler/status/1220376860497981442?s=20
