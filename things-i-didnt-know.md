@@ -12,3 +12,5 @@
 * `data %>% print(n=10, width = Inf)` to specify num rows and all cols when displaying tibble
 * when reading in a large dataset with `read_csv()`, there could be parsing errors and certain rows of the data don't read properly. To see the problems, run `dat <- read_csv(the data)`, `problems(dat)` to see the issues for rows with problems. Likely can overcome the issue by specifying the parser that needs to be used for that column.
 * when you write to csv using `write_csv()` the csv loses information on the type of variables (what is numeric, factor, etc.). To keep this information intact, instead use `write_rds()`, however this is only usable in R. 
+* `pryr::object_size(diamonds, diamonds2)` prints the object size! can see when variables shared across dataframes
+* `rnorm(100) %>% matrix(ncol = 2) %T>% plot() %>% str()`, not the T pipe `%T>%`, this allows you to do the two last calls on the data frame, because you can do the str() call on the plot() object. Cool!
